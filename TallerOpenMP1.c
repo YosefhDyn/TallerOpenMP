@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
 
     #pragma omp parallel
     {
-        int id = omp_get_thread_num();
+        int id = omp_get_thread_num(); // omp_get_thread_num da el id del hilo
 
         // Tiempo por hilo
         double elapsed = (double)(clock() - start) / CLOCKS_PER_SEC;
@@ -41,3 +41,4 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
+
