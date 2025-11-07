@@ -6,13 +6,13 @@ Fecha: **04/11/2025**
 
 ---
 
-## 🧠 Descripción general
+## Descripción general
 Este laboratorio contiene varios ejercicios de programación en lenguaje **C** que usan **OpenMP** para ejecutar código en paralelo mediante hilos.  
 Cada archivo `OpenMPN.c` corresponde a un ejercicio independiente que demuestra un concepto específico de **programación paralela** y el manejo de **variables compartidas y privadas**.
 
 ---
 
-## 📂 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 OpenMP.c    -> Ejemplo base: creación de hilos y mensajes paralelos
@@ -24,7 +24,7 @@ Makefile    -> Archivo para compilar y ejecutar todos los ejercicios
 
 ---
 
-## ⚙️ Compilación y ejecución
+## Compilación y ejecución
 
 ### Compilar todos los ejercicios
 ```bash
@@ -50,7 +50,7 @@ make clean
 
 ---
 
-## 💻 Uso en Replit
+## Uso en Replit
 1. Sube todos los archivos `OpenMP.c`, `OpenMP1.c`, `OpenMP2.c`, `OpenMP3.c` y el archivo `Makefile` a tu proyecto de **Replit**.  
 2. Abre la consola (Shell) en Replit.  
 3. Ejecuta el comando:
@@ -65,7 +65,7 @@ make clean
 
 ---
 
-## 🧩 Notas técnicas
+## Notas técnicas
 - Todos los programas se compilan con soporte para **OpenMP** mediante la bandera `-fopenmp`.  
 - Se utilizan las siguientes librerías:
   - `<omp.h>` para paralelismo  
@@ -77,7 +77,7 @@ make clean
 
 ---
 
-## 🧩 Conceptos demostrados
+## Conceptos demostrados
 - Creación de regiones paralelas con `#pragma omp parallel`  
 - Uso de las cláusulas `private`, `shared` y `reduction`  
 - Control del número de hilos con `omp_set_num_threads()` y `OMP_NUM_THREADS`  
@@ -87,13 +87,13 @@ make clean
 
 ---
 
-## 📊 Resultado esperado
+## Resultado esperado
 Al ejecutar cada programa se observarán diferentes comportamientos dependiendo de cómo se declaren las variables (privadas o compartidas) y del número de hilos seleccionados.  
 En el **OpenMP3**, el usuario puede especificar el número de hilos, y el programa calculará la sumatoria total de la función seno, mostrando la eficiencia del paralelismo.
 
 ---
 
-## 🧰 Comandos útiles
+## Comandos útiles
 
 | Comando | Descripción |
 |----------|--------------|
@@ -104,4 +104,4 @@ En el **OpenMP3**, el usuario puede especificar el número de hilos, y el progra
 
 ---
 
-### ✨ Fin del documento
+### Fin del documento
