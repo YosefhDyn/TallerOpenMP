@@ -1,0 +1,36 @@
+##############################################################
+#                 Pontificia Universidad Javeriana            #
+#                                                            #
+# Autor: Yosefh Steven Peña Rodríguez                        #
+# Materia: Sistemas Operativos                               #
+# Fecha: 04/11/2025                                          #
+# Fichero: Makefile – Laboratorio OpenMP                     #
+# Descripción: Compilación automatizada de programas OpenMP   #
+##############################################################
+
+# Compilador y banderas
+GCC     = gcc
+FLAGS   = -Wall -Wextra -O2 -fopenmp -lm
+
+# Programas del laboratorio
+PROGRAMAS = OpenMP OpenMP1 OpenMP2 OpenMP3
+
+##############################################################
+#                       Reglas de compilación                 #
+##############################################################
+
+all: $(PROGRAMAS)
+
+# Regla general para compilar cualquier archivo .c
+%: %.c
+	$(GCC) $(FLAGS) $< -o $@
+
+# Ejecutar un programa específico
+run:
+	@echo "Uso: make run NOMBRE (Ejemplo: make run OpenMP3)"
+	@echo ""
+
+# Limpieza de ejecutables
+clean:
+	rm -f $(PROGRAMAS)
+	@echo ">> Archivos compilados eliminados correctamente."
